@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-studio
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtap-qe-shared-tenant/quality-dashboard/backend-quality-studio@sha256:9b3e8787ecaedd7b2c76d5d1674864c08267bad7b72255154ff8111a42200ade
+        name: quality-backend-dashboard
+        resources: {}
+status: {}
