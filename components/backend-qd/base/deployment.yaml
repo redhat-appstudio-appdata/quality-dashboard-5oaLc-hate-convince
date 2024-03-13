@@ -86,7 +86,7 @@ spec:
             secretKeyRef:
               key: slack_token
               name: quality-dashboard-secrets
-        image: quay.io/redhat-appstudio/quality-dashboard-backend:latest
+        image: quay.io/redhat-user-workloads/rhtap-qe-shared-tenant/quality-dashboard/backend-qd@sha256:7661933ae6911c50cbc016a3f18f229483b54a17f712ac6722146bd94eb8d9b2
         imagePullPolicy: Always
         name: quality-backend-dashboard
         ports:
